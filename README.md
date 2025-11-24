@@ -55,6 +55,8 @@ We:
 
 ## 📦 Repository Structure
 
+## 📦 Repository Structure
+
 Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense/
 │
 ├── attack_modules/
@@ -64,12 +66,12 @@ Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense/
 │ ├── plots_whitenoise/
 │ ├── clean_audio/
 │ ├── final_audio_attacks.py
-│ └── README_attack.md (optional)
+│ └── README_attack.md
 │
 ├── defense/
 │ ├── low_pass_filter.py
 │ ├── denoising.py
-│ ├── defended_audio_samples/
+│ └── defended_audio_samples/
 │ └── plots_defense/
 │
 ├── evaluation/
@@ -80,8 +82,7 @@ Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense/
 │
 ├── requirements.txt
 ├── LICENSE
-└── README.md ← (this file)
-
+└── README.md
 ---
 
 ## 🧪 Attack Techniques
