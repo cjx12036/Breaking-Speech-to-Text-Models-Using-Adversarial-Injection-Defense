@@ -41,11 +41,9 @@ This project follows responsible AI security research practices and ethical disc
 
 ---
 
-## 🎯 Project Goal (from the project plan)
-
+## 🎯 Project Goal 
 Show how a **high-frequency audio tone** can break STT systems and how **low-pass filtering + denoising** can defend against it.  
 We:
-
 1. Built the attack module 
 2. Built the defense module
 3. Evaluated how the attack generalizes across different STT models  
