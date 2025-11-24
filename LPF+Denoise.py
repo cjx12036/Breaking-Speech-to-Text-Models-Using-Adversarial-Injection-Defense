@@ -272,7 +272,7 @@ if __name__ == "__main__":
     )
 
 """
-python defend_folder.py \
+python LPF+Denoise.py \
   --input_dir . \
   --output_dir defended_lp8_dn \
   --cutoff 8000
