@@ -166,10 +166,7 @@ You may supply:
 
 ### Install dependencies:
 
-pip install -r requirements.txt
-
-### Requirements include:
-#### refer to requirements.txt
+`pip install -r requirements.txt`
 
 ---
 
