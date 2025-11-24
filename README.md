@@ -55,34 +55,30 @@ We:
 
 ## 📦 Repository Structure
 
-## 📦 Repository Structure
+- **attack_modules/**
+  - 🎧 `adversarial_audio_highfreq_12_19kHz_compressed/`
+  - 🎧 `adversarial_audio_whitenoise_compressed/`
+  - 📈 `plots_highfreq/`
+  - 📈 `plots_whitenoise/`
+  - 🎤 `clean_audio/`
+  - 🧪 `final_audio_attacks.py`
 
-Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense/
-│
-├── attack_modules/
-│ ├── adversarial_audio_highfreq_12_19kHz_compressed/
-│ ├── adversarial_audio_whitenoise_compressed/
-│ ├── plots_highfreq/
-│ ├── plots_whitenoise/
-│ ├── clean_audio/
-│ ├── final_audio_attacks.py
-│ └── README_attack.md
-│
-├── defense/
-│ ├── low_pass_filter.py
-│ ├── denoising.py
-│ └── defended_audio_samples/
-│ └── plots_defense/
-│
-├── evaluation/
-│ ├── whisper_pipeline.py
-│ ├── vosk_pipeline.py
-│ ├── wer_evaluation.py
-│ └── combined_results.csv
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
+- **defense/**
+  - 🔊 `low_pass_filter.py`
+  - 🔈 `denoising.py`
+  - 📁 `defended_audio_samples/`
+    - 📈 `plots_defense/`
+
+- **evaluation/**
+  - 🧠 `whisper_pipeline.py`
+  - 🧠 `vosk_pipeline.py`
+  - 📊 `wer_evaluation.py`
+  - 📄 `combined_results.csv`
+
+- ⚙️ `requirements.txt`  
+- 📜 `LICENSE`  
+- 📘 `README.md`
+
 ---
 
 ## 🧪 Attack Techniques
