@@ -182,7 +182,7 @@ vosk
 
 ---
 
-## ⚙️ Setup & Installation (Full Reproducibility Guide)
+## ⚙️ Setup & Installation
 
 This project runs on:
 
@@ -195,21 +195,20 @@ This project runs on:
 
 ### 1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/cjx12036/Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense.git
 cd Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense
 
-2️⃣ Create a Virtual Environment (Recommended)
+### 2️⃣ Create a Virtual Environment (Recommended)
 python3 -m venv venv
 source venv/bin/activate   # Mac/Linux
 
 # Windows:
 venv\Scripts\activate
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Prepare Audio Files
+### 4️⃣ Prepare Audio Files
 
 Place your clean audio in:
 attack_modules/clean_audio/
@@ -217,14 +216,14 @@ attack_modules/clean_audio/
 Supported formats:
 .wav, .flac, .mp3, .ogg
 
-5️⃣ Run Adversarial Attack Generation (Sakthi • Attack Module)
+### 5️⃣ Run Adversarial Attack Generation (Sakthi • Attack Module)
 python attack_modules/final_audio_attacks.py
 
 Outputs appear under:
 attack_modules/adversarial_audio_highfreq_12_19kHz_compressed/
 attack_modules/adversarial_audio_whitenoise_compressed/
 
-6️⃣ Run Low-Pass Filter Defense (Nathan • Defense Module)
+### 6️⃣ Run Low-Pass Filter Defense (Nathan • Defense Module)
 python defense/low_pass_filter.py
 
 Optional denoising:
@@ -234,7 +233,7 @@ Defended audio will be saved under:
 defense/defended_audio_samples/
 defense/plots_defense/
 
-7️⃣ Evaluate STT Performance (Omkar • Evaluation Module)
+### 7️⃣ Evaluate STT Performance (Omkar • Evaluation Module)
 
 
 
