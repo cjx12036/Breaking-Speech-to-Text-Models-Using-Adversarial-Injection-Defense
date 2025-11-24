@@ -215,14 +215,15 @@ attack_modules/adversarial_audio_highfreq_12_19kHz/
 attack_modules/adversarial_audio_whitenoise/
 
 ### 6️⃣ Run Low-Pass Filter Defense (Nathan • Defense Module)
-python defense/low_pass_filter.py
+python LPF+Denoise.py \
+  --input_dir . \
+  --output_dir defended_lp8_dn \
+  --cutoff 8000
+  --no_denoise  # optional
 
-Optional denoising:
-python defense/denoising.py
-
-Defended audio will be saved under:
-defense/defended_audio_samples/
-defense/plots_defense/
+For the white noise:
+use demucs -o demucs_raw_out .target_input/*.wav
+then use flatten_demucs_outputs.py to get defended fold.
 
 ### 7️⃣ Evaluate STT Performance (Omkar • Evaluation Module)
 
