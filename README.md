@@ -73,8 +73,7 @@ We:
   - 📊 `wer_evaluation.py`
   - 📄 `combined_results.csv`
 
-- ⚙️ `requirements.txt`  
-- 📜 `LICENSE`  
+- ⚙️ `requirements.txt`   
 - 📘 `README.md`
 
 ---
