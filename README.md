@@ -1,5 +1,5 @@
 # Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense
-### CYB 590 – Project 3 • Duke University • Fall 2025
+### CYB 590 – Adversarial AI • Duke University • Fall 2025
 
 ---
 
@@ -219,8 +219,8 @@ Supported formats:
 python attack_modules/final_audio_attacks.py
 
 Outputs appear under:
-attack_modules/adversarial_audio_highfreq_12_19kHz_compressed/
-attack_modules/adversarial_audio_whitenoise_compressed/
+attack_modules/adversarial_audio_highfreq_12_19kHz/
+attack_modules/adversarial_audio_whitenoise/
 
 ### 6️⃣ Run Low-Pass Filter Defense (Nathan • Defense Module)
 python defense/low_pass_filter.py
