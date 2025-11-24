@@ -169,15 +169,7 @@ You may supply:
 pip install -r requirements.txt
 
 ### Requirements include:
-whisper
-jiwer
-numpy
-scipy
-librosa
-soundfile
-matplotlib
-pydub
-vosk
+#### refer to requirements.txt
 
 ---
 
@@ -194,18 +186,18 @@ This project runs on:
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/cjx12036/Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense.git
-cd Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense
+` git clone https://github.com/cjx12036/Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense.git
+cd Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense `
 
 ### 2️⃣ Create a Virtual Environment (Recommended)
-python3 -m venv venv
-source venv/bin/activate   # Mac/Linux
+`python3 -m venv venv
+source venv/bin/activate   # Mac/Linux`
 
 #### Windows:
-venv\Scripts\activate
+`venv\Scripts\activate`
 
 ### 3️⃣ Install Dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### 4️⃣ Prepare Audio Files
 
@@ -235,6 +227,20 @@ defense/plots_defense/
 ### 7️⃣ Evaluate STT Performance (Omkar • Evaluation Module)
 
 
+---
+
+# 📈 Results (Summary)
+
+> **High-frequency attacks were more stealthy**  
+> **White noise attacks were more destructive to WER**  
+> **Low-pass filtering at 6–8 kHz mitigated most HF attacks**  
+> **Generalization varied across Whisper vs Vosk**  
+
+Final plots and results are available inside:
+
+`attack_modules/plots_highfreq/`  
+`attack_modules/plots_whitenoise/`  
+`evaluation/combined_results.csv`
 
 ---
 
@@ -279,21 +285,6 @@ Our primary objective is:
 - Helping improve model robustness  
 - Advancing adversarial defense research  
 - Studying model generalization to real-world noise  
-
----
-
-# 📈 Results (Summary)
-
-> **High-frequency attacks were more stealthy**  
-> **White noise attacks were more destructive to WER**  
-> **Low-pass filtering at 6–8 kHz mitigated most HF attacks**  
-> **Generalization varied across Whisper vs Vosk**  
-
-Final plots and results are available inside:
-
-`attack_modules/plots_highfreq/`  
-`attack_modules/plots_whitenoise/`  
-`evaluation/combined_results.csv`
 
 ---
 
