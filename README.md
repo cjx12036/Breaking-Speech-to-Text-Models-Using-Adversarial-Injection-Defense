@@ -16,6 +16,8 @@ We also implement a **defense pipeline** combining:
 We evaluate the **effectiveness of both attacks and defenses** using **Word Error Rate (WER)**, waveform analysis, spectrograms, and comparative performance metrics.  
 This project follows responsible AI security research practices and ethical disclosure guidelines.
 
+LINK TO THE SLIDES: https://www.canva.com/design/DAG5jKh_JHo/llCqkJYMHcX8xRwvWuL81A/edit?utm_content=DAG5jKh_JHo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ---
 
 ## 👥 Project Team & Responsibilities
