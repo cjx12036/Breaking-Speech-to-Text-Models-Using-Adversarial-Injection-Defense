@@ -182,37 +182,61 @@ vosk
 
 ---
 
-## 🚀 Running the Project
+## ⚙️ Setup & Installation (Full Reproducibility Guide)
 
-### **1. Run the attack_module**
+This project runs on:
 
+- Python **3.9+**
+- Google Colab **(recommended)**
+- Ubuntu 22.04 / macOS 14
+- Whisper CPU/GPU inference
+
+---
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/cjx12036/Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense.git
+cd Breaking-Speech-to-Text-Models-Using-Adversarial-Injection-Defense
+
+2️⃣ Create a Virtual Environment (Recommended)
+python3 -m venv venv
+source venv/bin/activate   # Mac/Linux
+
+# Windows:
+venv\Scripts\activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Prepare Audio Files
+
+Place your clean audio in:
+attack_modules/clean_audio/
+
+Supported formats:
+.wav, .flac, .mp3, .ogg
+
+5️⃣ Run Adversarial Attack Generation (Sakthi • Attack Module)
 python attack_modules/final_audio_attacks.py
 
-Generates:
+Outputs appear under:
+attack_modules/adversarial_audio_highfreq_12_19kHz_compressed/
+attack_modules/adversarial_audio_whitenoise_compressed/
 
-- High-frequency and white-noise adversarial audio  
-- Waveform and spectrogram plots  
-- WER comparison charts  
-
-### **2. Run the defense pipeline (Nathan’s module)**
-
+6️⃣ Run Low-Pass Filter Defense (Nathan • Defense Module)
 python defense/low_pass_filter.py
+
+Optional denoising:
 python defense/denoising.py
 
-Outputs:
+Defended audio will be saved under:
+defense/defended_audio_samples/
+defense/plots_defense/
 
-- Defended audio  
-- Before/after spectrograms  
+7️⃣ Evaluate STT Performance (Omkar • Evaluation Module)
 
-### **3. Run evaluation (Omkar’s module)**
 
-python evaluation/wer_evaluation.py
-
-Outputs:
-
-- WER tables  
-- Summary plots  
-- Combined results CSV  
 
 ---
 
@@ -281,6 +305,29 @@ Final plots and results are available inside:
 - Adversaries can hide commands in near-ultrasound frequencies  
 - White noise can be used to confuse automated transcription systems  
 - Filtering defenses introduce trade-offs between intelligibility and security  
+
+---
+
+## 🤖 Use of AI Systems in This Project
+
+We used AI-based development tools to support coding, debugging, and documentation generation. All design decisions, algorithms, and implementation logic were created and validated by the project team.
+
+### Tools Used
+- **ChatGPT, Claude**  
+  Used for:
+  - generating boilerplate code for signal processing (e.g., waveform plotting, spectrogram setup)
+  - debugging Python/NumPy/Librosa issues
+  - documentation writing and README formatting
+  - code refactoring for cleanliness and reproducibility
+
+### Human Oversight
+All generated or suggested code and documentation were:
+- manually verified
+- edited to ensure correctness
+- tested within the project environment
+- integrated only after thorough review by the team
+
+We maintain full responsibility for the design, logic, implementation, evaluation, and ethical use of the project.
 
 ---
 
